@@ -156,7 +156,7 @@ def stare_app():
     phone =  os.popen('adb shell getprop ro.product.model').read()
     lianjie = messagebox.askokcancel('链接 提示',
                                      phone + xuliehao +
-                                     "显示【手机型号】和【序列号】点击确认即可\n请否则开启手机【USb调试】相关功能, 正确链接手机\n点击取消 退出程序")
+                                     "显示【手机型号】和【序列号】点击确认即可\n否则请开启手机【USb调试】相关功能, 正确链接手机\n点击取消 退出程序")
     if lianjie == False:
         root.destroy()
         exit()
